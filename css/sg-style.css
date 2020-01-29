@@ -388,50 +388,30 @@ body {
 
 /* Colors
 ---------------------------------------------------------------------------- */
-.sg-color {
-  margin-bottom: 1.5em;
-}
-
 .sg-color-swatch {
   padding-top: 20%; /* Used to set height of color swatch */
 }
 
 .sg-color-name {
-  font-size: 1.2em; /* Test this with 1.1 em */
-  padding: .5em 0;
+  font-size: 1.1em; /* Test this with 1.1 em */
+  padding: 0.5em 0;
 }
 
 .sg-color-value {
-  font-size: 1.2em;  /* Test this with 1.1 em */
+  font-size: 1.1em; /* Test this with 1.1 em */
+}
+
+.sg-color-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr));
+  grid-auto-rows: 1fr;
+  grid-gap: 1em;
+  margin: auto;
 }
 
 @media only screen and (min-width: 375px) {
-  .sg-color-grid {
-    margin: 0 -2.5%;
-    overflow: hidden;
-  }
-
-  .sg-color {
-    float: left;
-    margin-left: 2.5%;
-    margin-right: 2.5%;
-    width: 45%;
-  }
-
   .sg-color-swatch {
-    padding-top: 60%; /* Used to set height of color swatch */
-  }
- }
-
-@media only screen and (min-width: 760px) {
-  .sg-color {
-    margin-left: 1.5%;
-    margin-right: 1.5%;
-    width: 22%;
-  }
-
-  .sg-color-grid {
-    margin: 0 -1.5%;
+    padding-top: 80%; /* Used to set height of color swatch */
   }
 }
 
